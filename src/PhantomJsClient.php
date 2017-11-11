@@ -97,9 +97,6 @@ class PhantomJsClient implements HttpClientInterface
             }
         }
 
-        // ignore SSL warnings
-        $commandOptions[]= '--ignore-ssl-errors=true';
-
         $initialUrl = (string)$request->getUri();
 
         $commandArg = [
